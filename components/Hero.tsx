@@ -1,5 +1,28 @@
-// src/components/Hero.tsx
 import React from 'react';
+
+const styles: { [key: string]: React.CSSProperties } = {
+  hero: {
+    textAlign: "center",  // Must be a valid value: "left", "right", "center", "justify"
+    padding: "20px",
+    backgroundImage: "url('/image.png')",
+    backgroundSize: "cover",
+    color: "white",
+  },
+  searchInput: {
+    padding: "10px",
+    fontSize: "16px",
+    margin: "10px 0",
+  },
+  ctaButton: {
+    padding: "10px 20px",
+    fontSize: "16px",
+    backgroundColor: "#0070f3",
+    color: "#fff",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+  }
+};
 
 const Hero: React.FC = () => {
   return (
@@ -10,26 +33,6 @@ const Hero: React.FC = () => {
       <button style={styles.ctaButton}>Start Searching</button>
     </section>
   );
-};
-
-const styles = {
-  hero: {
-    textAlign: 'center',
-    padding: '50px 20px',
-    backgroundImage: 'url(/path-to-your-background-image.jpg)',
-    backgroundSize: 'cover',
-    color: '#fff',
-  },
-  searchInput: {
-    width: '80%',
-    padding: '10px',
-    margin: '20px 0',
-  },
-  ctaButton: {
-    padding: '10px 20px',
-    fontSize: '16px',
-    cursor: 'pointer',
-  },
 };
 
 export default Hero;

@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import FeaturedProfessors from './components/FeaturedProfessors';
+import Header from './Header';
+import Hero from './Hero';
+import FeaturedProfessors from './FeaturedProfessors';
 
 const App: React.FC = () => (
   <div className="app-container">
