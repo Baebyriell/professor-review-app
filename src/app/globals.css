@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-64::-webkit-scrollbar { /* Target the scrollbar within the chat area */
+    width: 8px; /* Adjust width as needed */
+  }
+  
+  .h-64::-webkit-scrollbar-track {
+    background: transparent; /* Make the track transparent */
+  }
+  
+  .h-64::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 102, 255, 0.2); /* Softer blue for better blend */
+    border-radius: 4px;
+  }
+
